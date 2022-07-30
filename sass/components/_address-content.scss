@@ -3,8 +3,6 @@
   flex-direction: column;
 }
 
-.address__text,
-.address__email,
 .address__phone {
   font-style: normal;
   font-weight: 400;
@@ -16,11 +14,14 @@
 }
 
 .address__text {
-  margin-bottom: 9px;
+  @extend .address__phone;
 
+  margin-bottom: 9px;
   color: $white-txt-bg-color;
 }
 
 .address__email {
+  @extend .address__phone;
+
   margin-bottom: 9px;
 }

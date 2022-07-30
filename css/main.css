@@ -253,9 +253,7 @@ svg {
           flex-direction: column;
 }
 
-.address__text,
-.address__email,
-.address__phone {
+.address__phone, .address__email, .address__text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
