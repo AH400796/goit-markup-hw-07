@@ -1,0 +1,32 @@
+.contacts,
+.contacts__phone,
+.contacts__email {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $primary-text-color;
+}
+
+.contacts__email {
+  margin-right: 50px;
+}
+
+.email,
+.phone {
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts__smartphone-icon,
+.contacts__envelope-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

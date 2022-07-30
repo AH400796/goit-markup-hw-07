@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <title>Портфоліо</title>
   </head>
 
@@ -36,13 +36,13 @@
         <!-- Контакти -->
         <div class="contacts">
           <a class="email contacts__email link" href="mailto:info@devstudio.com">
-            <svg class="envelope" width="16" height="12">
+            <svg class="contacts__envelope-icon" width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@devstudio.com
           </a>
           <a class="phone contacts__phone link" href="tel:+380961111111"
-            ><svg class="smartphone" width="10" height="16">
+            ><svg class="contacts__smartphone-icon" width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11
@@ -57,21 +57,21 @@
         <div class="container">
           <h1 class="portfolio__title visually-hidden">Наше портфоліо</h1>
           <!-- Список фільтрів -->
-          <ul class="filter__list list">
-            <li class="filter__item">
-              <button class="filter__btn" type="button">Все</button>
+          <ul class="portfolio__filter-list list">
+            <li class="portfolio__filter-item">
+              <button class="portfolio__filter-btn" type="button">Все</button>
             </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button">Веб-сайти</button>
+            <li class="portfolio__filter-item">
+              <button class="portfolio__filter-btn" type="button">Веб-сайти</button>
             </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button">Додатки</button>
+            <li class="portfolio__filter-item">
+              <button class="portfolio__filter-btn" type="button">Додатки</button>
             </li>
-            <li class="filte__item">
-              <button class="filter__btn" type="button">Дизайн</button>
+            <li class="portfolio__filte_-tem">
+              <button class="portfolio__filter-btn" type="button">Дизайн</button>
             </li>
-            <li class="filter__item">
-              <button class="filter__btn" type="button">Маркетинг</button>
+            <li class="portfolio__filter-item">
+              <button class="portfolio__filter-btn" type="button">Маркетинг</button>
             </li>
           </ul>
           <!-- Список проєктів -->
@@ -86,7 +86,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Технокряк</h2>
-                  <p class="filter__title">Веб-сайт</p>
+                  <p class="portfolio__filter-title">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
-                  <p class="filter__title">Дизайн</p>
+                  <p class="portfolio__filter-title">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Ресторан Seafood</h2>
-                  <p class="filter__title">Додаток</p>
+                  <p class="portfolio__filter-title">Додаток</p>
                 </div>
               </a>
             </li>
@@ -122,7 +122,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Проєкт Prime</h2>
-                  <p class="filter__title">Маркетинг</p>
+                  <p class="portfolio__filter-title">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -137,7 +137,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Проєкт Boxes</h2>
-                  <p class="filter__title">Додаток</p>
+                  <p class="portfolio__filter-title">Додаток</p>
                 </div>
               </a>
             </li>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Inspiration has no Borders</h2>
-                  <p class="filter__title">Веб-сайт</p>
+                  <p class="portfolio__filter-title">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -167,7 +167,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Видання Limited Edition</h2>
-                  <p class="filter__title">Дизайн</p>
+                  <p class="portfolio__filter-title">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Проєкт LAB</h2>
-                  <p class="filter__title">Маркетинг</p>
+                  <p class="portfolio__filter-title">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -197,7 +197,7 @@
                 </div>
                 <div class="portfolio__text">
                   <h2 class="portfolio__title">Growing Business</h2>
-                  <p class="filter__title">Додаток</p>
+                  <p class="portfolio__filter-title">Додаток</p>
                 </div>
               </a>
             </li>
@@ -211,14 +211,16 @@
         <div class="footer__content">
           <div class="footer__address">
             <a class="logo footer__logo link" href="./index.html"><span class="web-logo">Web</span><span class="studio-logo">Studio</span> </a>
+            <!-- Адреса -->
             <address class="address">
               <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
               <a class="email address__email link" href="mailto:info@example.com">info@example.com</a>
               <a class="phone address__phone link" href="tel:+380991111111">+38 099 111 11 11</a>
             </address>
           </div>
-          <div class="social">
-            <strong class="social__title">Приєднуйтесь</strong>
+          <!-- Соціальні мережі -->
+          <div class="footer__social">
+            <strong class="footer__social-label">Приєднуйтесь</strong>
             <ul class="social__list list">
               <li class="social__item">
                 <a class="social__link social__link--inverse" href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -250,6 +252,7 @@
               </li>
             </ul>
           </div>
+          <!-- Підписка -->
           <div class="subscription">
             <form class="subscription__form" autocomplete="off">
               <strong class="subscription__title">Підпишіться на розсилку</strong>
@@ -258,7 +261,7 @@
                   <input class="subscription__input" type="email" name="email" placeholder="E-mail" id="email" />
                   <label class="subscription__label visually-hidden" for="email">E-mail</label>
                 </div>
-                <button class="button subscription__btn" type="submit">
+                <button class="subscription__btn" type="submit">
                   Підписатися
                   <svg class="subscription__btn-icon" width="24" height="24">
                     <use href="./images/icons.svg#send-button"></use>

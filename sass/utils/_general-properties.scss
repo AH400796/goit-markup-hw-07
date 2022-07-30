@@ -1,0 +1,23 @@
+body {
+  font-family: $general-text-font;
+  font-style: normal;
+  background-color: $white-txt-bg-color;
+  color: $primary-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+}

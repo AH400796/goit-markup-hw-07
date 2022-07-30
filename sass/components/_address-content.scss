@@ -1,0 +1,26 @@
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address__text,
+.address__email,
+.address__phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $address-contacts-color;
+}
+
+.address__text {
+  margin-bottom: 9px;
+
+  color: $white-txt-bg-color;
+}
+
+.address__email {
+  margin-bottom: 9px;
+}
