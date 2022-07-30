@@ -10,7 +10,7 @@
 
   color: $white-txt-bg-color;
   background-color: $accent-color;
-  box-shadow: 0px 4px 4px $button-shadow-color;
+  box-shadow: 0px 4px 4px $shade-of-black6;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -56,7 +56,7 @@
   cursor: pointer;
   border-radius: 50%;
   background: $white-txt-bg-color;
-  border: 1px solid $close-btn-border-color;
+  border: 1px solid $shade-of-black3;
 }
 
 .modal__btn-icon {
@@ -87,6 +87,6 @@
   &:focus {
     color: $white-txt-bg-color;
     background-color: $accent-color;
-    box-shadow: 0px 3px 1px $close-btn-border-color, 0px 1px 2px $button-shadow-color2, 0px 2px 2px $modal-shadow-color1;
+    box-shadow: 0px 3px 1px $shade-of-black3, 0px 1px 2px $shade-of-black2, 0px 2px 2px $shade-of-black4;
   }
 }

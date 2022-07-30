@@ -33,10 +33,11 @@
 .portfolio__link {
   display: block;
   background-color: $white-txt-bg-color;
-  transition: box-shadow $transition-duration $timing-function;
+
+  @include transition(box-shadow);
 
   &:hover {
-    box-shadow: 0px 1px 1px $modal-shadow-color1, 0px 4px 4px $shadow-color, 1px 4px 6px $shadow-color2;
+    box-shadow: 0px 1px 1px $shade-of-black4, 0px 4px 4px $shade-of-black1, 1px 4px 6px $shade-of-black7;
   }
 }
 
