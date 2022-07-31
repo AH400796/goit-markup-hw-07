@@ -713,6 +713,7 @@ svg {
 }
 
 .subscription__field {
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -720,6 +721,28 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 12px;
+}
+
+.subscription__label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscription__input:not(:-moz-placeholder-shown) + .subscription__label {
+  opacity: 0;
+}
+.subscription__input:not(:-ms-input-placeholder) + .subscription__label {
+  opacity: 0;
+}
+.subscription__input:not(:placeholder-shown) + .subscription__label {
+  opacity: 0;
 }
 
 .subscription__input {
