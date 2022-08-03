@@ -16,8 +16,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 60px) / 3);
+
   align-content: flex-start;
+}
+
+.portfolio__item {
+  @include flex-basis(3, 30px);
 }
 
 .portfolio__title {

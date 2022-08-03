@@ -356,8 +356,6 @@ svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
-  -ms-flex-preferred-size: calc((100% - 60px) / 4);
-      flex-basis: calc((100% - 60px) / 4);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -412,12 +410,12 @@ svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
 }
 
 .employment__item {
   position: relative;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
 }
 
 .employment__overlay {
@@ -444,7 +442,7 @@ svg {
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
 }
 
-.partner__title {
+.clients__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -453,7 +451,7 @@ svg {
   color: #212121;
 }
 
-.partner__link {
+.clients__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -471,23 +469,26 @@ svg {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.partner__link:hover, .partner__link:focus {
+.clients__link:hover, .clients__link:focus {
   color: #2196f3;
   border-color: #2196f3;
 }
 
-.partner__list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+
+.clients__item {
   -ms-flex-preferred-size: calc((100% - 150px) / 6);
       flex-basis: calc((100% - 150px) / 6);
 }
 
-.partner__icon {
+.clients__icon {
   fill: currentColor;
 }
 
@@ -513,11 +514,6 @@ svg {
   background-color: #f5f4fa;
 }
 
-.team__list {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
-}
-
 .team__photo {
   margin-bottom: 30px;
 }
@@ -528,6 +524,8 @@ svg {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(33, 33, 33, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(33, 33, 33, 0.2);
   border-radius: 0px 0px 4px 4px;
+  -ms-flex-preferred-size: calc((100% - 90px) / 4);
+      flex-basis: calc((100% - 90px) / 4);
 }
 
 .team__member {
@@ -573,10 +571,13 @@ svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
   -ms-flex-line-pack: start;
       align-content: flex-start;
+}
+
+.portfolio__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio__title {

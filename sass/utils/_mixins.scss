@@ -17,3 +17,7 @@
 @mixin transition-fast-2($property1, $property2) {
   transition: $property1 $transition-duration-modal $timing-function, $property2 $transition-duration-modal $timing-function;
 }
+
+@mixin flex-basis($item-quantity, $gap) {
+  flex-basis: calc((100% - $gap * ($item-quantity - 1)) / $item-quantity);
+}

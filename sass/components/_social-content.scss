@@ -2,9 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  flex-basis: calc((100% - 20px * 3) / 4);
+
   justify-content: center;
-  color: $partners-logo-color;
+  color: $clients-logo-color;
 }
 
 .social__link {
@@ -15,7 +15,7 @@
   align-items: center;
   border-radius: 50%;
 
-  color: $partners-logo-color;
+  color: $clients-logo-color;
   background-color: transparent;
 
   @include transition-2(background-color, color);

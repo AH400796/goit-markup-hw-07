@@ -12,11 +12,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 30px * 2) / 3);
 }
 
 .employment__item {
   position: relative;
+  @include flex-basis(3, 30px);
 }
 
 .employment__overlay {
